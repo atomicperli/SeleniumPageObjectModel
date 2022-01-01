@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<!-- parallel = "tests" means runs test blocks parallely !-->
+<!-- parallel = "methods" means runs test @Test annotation methods parallely !-->
+<!-- parallel = "classes" means runs multiple classes in a test block parallely !-->
+<suite name="Rohi" >
+    <test name="DemoQATextBoxPage">
+        <classes>
+            <class name="Tests.TextBoxPageTests"/>
+        </classes>
+    </test>
+</suite>
+
+
