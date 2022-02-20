@@ -8,7 +8,7 @@ stages {
     
         script {
       
-          echo 'Hello'
+          echo 'Helloooo'
       
         }
     
