@@ -4,7 +4,7 @@ pipeline {
         stage('Test Category Printing') {
             steps {
                 sh """#!/usr/bin/env bash
-                echo "Hello"
+                echo "Hellooooo"
                 """
             }
         }
