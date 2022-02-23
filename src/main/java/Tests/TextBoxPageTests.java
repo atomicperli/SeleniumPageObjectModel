@@ -2,6 +2,7 @@ package Tests;
 
 import Pages.TextBox;
 import master.InitialSuiteSetup;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import util.UIHelper;
@@ -18,8 +19,8 @@ public class TextBoxPageTests extends InitialSuiteSetup {
     }
 
     @Test
-    public void Test1() throws InterruptedException {
-        TextBox t = new TextBox(driver);
+    public void Test1()  {
+        TextBox t = PageFactory.initElements(driver, TextBox.class);
         driver.get("https://demoqa.com/text-box");
 
 

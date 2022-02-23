@@ -3,7 +3,7 @@
 <!-- parallel = "tests" means runs test blocks parallely !-->
 <!-- parallel = "methods" means runs test @Test annotation methods parallely !-->
 <!-- parallel = "classes" means runs multiple classes in a test block parallely !-->
-<suite name="Rohi" >
+<suite name="MySuite" >
     <test name="DemoQATextBoxPage">
         <classes>
             <class name="Tests.TextBoxPageTests"/>

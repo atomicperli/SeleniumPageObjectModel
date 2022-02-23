@@ -10,11 +10,6 @@ public class TextBox {
 
     WebDriver myDriver;
 
-    public TextBox(WebDriver driver) {
-        this.myDriver = driver;
-        PageFactory.initElements(myDriver, this);
-    }
-
     @FindBy(how=How.XPATH, using = "//input[@id='userName']")
     public WebElement fullName;
 
