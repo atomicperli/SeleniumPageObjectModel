@@ -23,7 +23,7 @@ pipeline {
                                 for (int k = 0; k < files.size(); k++) {
                                     def file = files[k]
                                     echo "${file.path}"
-                                    if(${file.path}.contains("Start.java") || ${file.path}.contains("TextBox.java")) {
+                                    if("${file.path}".contains("Start.java") || "${file.path}".contains("TextBox.java")) {
                                         println("Required Files Found, Proceeding to Build Image")
                                         break
                                     }
