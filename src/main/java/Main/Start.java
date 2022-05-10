@@ -17,6 +17,6 @@ public class Start {
         testng.setTestSuites(suites);
         testng.run();
         System.exit(testng.getStatus());
-        System.out.println("Change in Start.java");
+        
     }
 }
