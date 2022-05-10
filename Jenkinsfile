@@ -20,9 +20,14 @@ pipeline {
                                 def entry = entries[j]
                                 echo "${entry.commitId} by ${entry.author} on ${new Date(entry.timestamp)}: ${entry.msg}"
                                 def files = new ArrayList(entry.affectedFiles)
-                                if(files.contains("Start.java") || files.contains("TextBox.java")) {
-                                    println("Required Files Found, Proceeding to Build Image")
-                                }
+                                for (int k = 0; k < files.size(); k++) {
+                                    def file = files[k]
+                                    echo "${file.path}"
+                                    if(${file.path}.contains("Start.java") || ${file.path}.contains("TextBox.java")) {
+                                        println("Required Files Found, Proceeding to Build Image")
+                                        break
+                                    }
+                                }  
                             }
                         }
                     } else {
