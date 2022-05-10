@@ -24,5 +24,8 @@ public class TextBox {
 
     @FindBy(how = How.XPATH, using = "//button[@id='submit']")
     public WebElement submitButton;
+    
+    @FindBy(how = How.XPATH, using = "//button[@id='submit']")
+    public WebElement submitButton2;
 
 }
